@@ -26,3 +26,8 @@ On the cluster:
 singularity pull docker://gm088/cserver:latest
 ```
 then qsub the submission script, first checking that you replace the appropriate custom directories
+
+```
+qsub -I -l select=1:ncpus=2:mem=10G vscoderun.sh
+```
+
