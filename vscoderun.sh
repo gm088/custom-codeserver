@@ -7,7 +7,7 @@
 #-------------------------------------------------------------------------
 # DECLARE PATH VARIABLES
 #-------------------------------------------------------------------------
-# Path of the singularity image to run rstudio-server
+# Path of the singularity image to run code-server
 singularity_image="/hpcnfs/data/GN2/gmandana/singularity_images/cserver_latest.sif"
 #
 
