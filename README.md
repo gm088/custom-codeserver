@@ -16,9 +16,9 @@ on your computer:
 ```
 #!/bin/bash
 IMAGE_VERSION=$(date '+%d%m%y')
-docker build -t gm088/cserver:${IMAGE_VERSION} -t gm088/cserver:latest . && \
-docker push gm088/cserver:${IMAGE_VERSION}
-docker push gm088/cserver:latest
+docker build -t username/cserver:${IMAGE_VERSION} -t username/cserver:latest . && \
+docker push username/cserver:${IMAGE_VERSION}
+docker push username/cserver:latest
 ```
 
 On the cluster:
