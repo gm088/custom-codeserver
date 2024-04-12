@@ -1,5 +1,5 @@
 # custom-codeserver
-run vscode on our HPC cluster 
+run vscode on our HPC cluster using codeserver (**https://github.com/coder/code-server**)
 
 build docker image
 singularity pull onto cluster
