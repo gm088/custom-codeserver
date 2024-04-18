@@ -19,7 +19,15 @@ home="/hpcnfs/data/GN2/gmandana/bin/cserver"
 pip_conf_file="${home}/.config/pip/pip.conf"
 packages_install_path="${home}/site-packages/"
 mkdir -p ${packages_install_path}
+mkdir -p ${home}/.config
 
+if [ ! -e ${pip_conf_file} ]
+then
+  printf '\nNOTE: creating pip env file\n\n'
+  touch ${pip_conf_file}
+  echo "[global]" >> ${pip_conf_file}
+  echo "target = ${packages_install_path}" >> ${pip_conf_file}
+fi
 #-------------------------------------------------------------------------
 # SET VARIABLES TO RUN SERVER
 #-------------------------------------------------------------------------
