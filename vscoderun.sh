@@ -60,8 +60,8 @@ export SINGULARITYENV_PYTHONPATH="${packages_install_path}:/usr/lib/python310.zi
 # RUN CODE SERVER FROM SINGULARITY
 #-------------------------------------------------------------------------
 
-####NB for code server have to manually set 0.0.0.0 to listen at all interfaces
-#### otherwise it uses a particular interface
+####NB for code server have set 0.0.0.0 to listen at all interfaces
+#### otherwise it uses localhost
 #### pass the password as an environment variable according to code-server --help
 
 /hpcnfs/software/singularity/3.7.0/bin/singularity exec --cleanenv \
